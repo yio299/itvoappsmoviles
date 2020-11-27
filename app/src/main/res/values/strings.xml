@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ExamenUnidad2</string>
+    <string name="correo_hint">Correo</string>
+    <string name="contrasena_hint">Contaseña</string>
+    <string name="iniciar_sesion_hint">Login</string>
+    <string name="ya_tienes_una_cuenta_text">¿No tienes una cuenta?</string>
+    <string name="crear_cuenta_text">Registrate</string>
+    <string name="inicio_sesion_app_text">Inicio de Sesion</string>
+    <string name="string_inicio_sesion_app_text">Inicia Sesion en la App Examen</string>
+    <string name="acerca_de_mi">Acerca de mi …</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="repetir_contrase_a">Repetir Contraseña</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="apellido">Apellido</string>
+    <string name="nombre">Nombre</string>
+    <string name="crear_una_cuenta">Crear Una Cuenta</string>
+</resources>

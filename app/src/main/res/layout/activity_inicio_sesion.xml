@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".InicioSesionActivity">
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_inicio_sesion_app_text"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_heading">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/et_correo"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.7"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/correo_hint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="50dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:importantForAutofill="no" />
+
+
+            <EditText
+                android:id="@+id/et_contrasena"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.7"
+                android:layout_height="wrap_content"
+                android:hint="@string/contrasena_hint"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:textSize="15sp"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/et_correo"
+                android:importantForAutofill="no" />
+
+
+            <Button
+                android:id="@+id/btn_iniciar_sesion"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@+id/et_contrasena"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/iniciar_sesion_hint"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:background="@color/design_default_color_primary"
+                android:textAllCaps="false"
+                android:layout_marginTop="40dp"
+                app:layout_constraintWidth_percent="0.7"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout_already_have_account"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="1.0"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_iniciar_sesion"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_already_have_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:text="@string/ya_tienes_una_cuenta_text"
+                    />
+
+                <Button
+                    android:id="@+id/btn_registarse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"
+                    android:textAllCaps="false"
+                    android:text="@string/crear_cuenta_text" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
